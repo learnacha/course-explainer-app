@@ -16,4 +16,6 @@ courses = [
            ["Flask Basics", "Routing and Templates", "Forms and Validation", "Database Integration", "Deployment"]),
     Course("Data Science Fundamentals", "An introduction to data science concepts and tools.", "Alice Johnson", "8 weeks",
            ["Statistics Basics", "Python for Data Science", "Data Visualization", "Machine Learning Introduction"]),
+    Course("Go Programming Essentials", "Master Go programming language from basics to advanced concepts.", "Robert Chen", "5 weeks",
+           ["Go Basics and Syntax", "Goroutines and Concurrency", "Channels and Synchronization", "Web Services with Go", "Testing and Deployment"]),
 ]
