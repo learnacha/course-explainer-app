@@ -66,3 +66,204 @@ h1 {
     bottom: 0;
     width: 100%;
 }
+
+/* Contact Page Styles */
+.contact-wrapper {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.contact-form-container {
+    flex: 1 1 60%;
+    min-width: 300px;
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.social-media-container {
+    flex: 1 1 35%;
+    min-width: 280px;
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #222;
+}
+
+.required {
+    color: #d32f2f;
+    margin-left: 2px;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: inherit;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-input {
+    height: 40px;
+}
+
+.form-textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.form-input:focus, .form-textarea:focus {
+    border-color: #2a6fb6;
+    border-width: 2px;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(42, 111, 182, 0.1);
+    padding: 9px 11px; /* Adjust padding to compensate for border width change */
+}
+
+.form-input.error, .form-textarea.error {
+    border-color: #d32f2f;
+    border-width: 2px;
+    padding: 9px 11px;
+}
+
+.form-error {
+    color: #d32f2f;
+    font-size: 14px;
+    margin-top: 4px;
+    display: block;
+}
+
+/* Button Styles */
+.btn-submit {
+    background: #2a6fb6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+.btn-submit:hover {
+    background: #235a94;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-submit:focus {
+    outline: 2px solid #2a6fb6;
+    outline-offset: 2px;
+}
+
+.btn-submit:active {
+    transform: translateY(1px);
+}
+
+.btn-submit:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Alert Styles */
+.alert-success {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+    padding: 12px 16px;
+    color: #155724;
+    margin-bottom: 20px;
+}
+
+.alert-error {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    padding: 12px 16px;
+    color: #721c24;
+    margin-bottom: 20px;
+}
+
+/* Social Media Styles */
+.social-heading {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 16px 0;
+    border-bottom: 2px solid #37474f;
+    padding-bottom: 8px;
+    color: #222;
+}
+
+.social-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    padding: 10px 12px;
+    border-radius: 4px;
+    color: #37474f;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: all 0.2s ease;
+}
+
+.social-link:hover {
+    background: #f0f0f0;
+    transform: scale(1.02);
+}
+
+.social-link:focus {
+    outline: 2px solid #2a6fb6;
+    outline-offset: 2px;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+    }
+
+    .contact-form-container,
+    .social-media-container {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-submit {
+        width: 100%;
+    }
+
+    .form-input, .form-textarea {
+        font-size: 16px; /* Prevent zoom on mobile */
+    }
+}
