@@ -33,12 +33,14 @@ course-explainer-app
 ## Installation
 
 1. Clone the repository:
+
    ```
    git clone <repository-url>
    cd course-explainer-app
    ```
 
 2. Create a virtual environment:
+
    ```
    python -m venv venv
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
@@ -46,20 +48,23 @@ course-explainer-app
 
 3. Install the required packages:
    ```
-   pip install -r requirements.txt
+   uv pip install -r requirements.txt
    ```
 
 ## Usage
 
 To run the application, execute the following command:
+
 ```
 python src/app.py
 ```
+
 Visit `http://127.0.0.1:5000` in your web browser to view the application.
 
 ## Testing
 
 To run the tests, use:
+
 ```
 python -m unittest discover -s tests
 ```

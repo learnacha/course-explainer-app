@@ -10,7 +10,8 @@
       "Bash(python:*)",
       "Bash(timeout /t 3 /nobreak)",
       "mcp__playwright__browser_navigate",
-      "mcp__playwright__browser_click"
+      "mcp__playwright__browser_click",
+      "mcp__myDemoMcp__add"
     ],
     "deny": [],
     "ask": []
