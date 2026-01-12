@@ -15,8 +15,9 @@
 ### Neutrals
 
 ```css
---bg-primary: #ffffff; /* Main background */
---bg-secondary: #f8fafc; /* Subtle backgrounds, cards */
+--bg-primary: #fafbfc; /* Main background - soft off-white */
+--bg-secondary: #f1f5f9; /* Card backgrounds - light blue-gray */
+--bg-accent: #e0f2fe; /* Highlight sections - very light cyan */
 --text-primary: #1e293b; /* Main text */
 --text-secondary: #64748b; /* Muted text */
 --border: #e2e8f0; /* Borders, dividers */
@@ -88,6 +89,7 @@ h3 {
 - Padding inside cards/buttons: 16px (--space-4)
 - Margin between sections: 32px (--space-8)
 - Margin between elements: 16px (--space-4)
+- Body padding: 20px (--space-5)
 
 ## Border Radius
 
@@ -130,7 +132,7 @@ h3 {
 
 ```css
 .card {
-  background: white; /* --bg-primary */
+  background: #f1f5f9; /* --bg-secondary */
   border: 1px solid #e2e8f0; /* --border */
   border-radius: 8px; /* --radius-md */
   padding: 24px; /* --space-6 */
