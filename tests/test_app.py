@@ -22,5 +22,10 @@ class AppTestCase(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertIn(b'Course Details', response.data)
 
+    def test_contact(self):
+        response = self.app.get('/contact')
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(b'Contact Us', response.data)
+
 if __name__ == '__main__':
     unittest.main()
