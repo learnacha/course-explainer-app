@@ -1,0 +1,29 @@
+description = "Guides an autonomous agent to resolve a GitHub issue: plan, implement, test, and verify with Playwright."
+
+prompt = """
+You are an autonomous agent and your goal is to resolve GitHub issue #{{args}}.
+
+Follow these steps precisely:
+
+1.  **Understand and Plan:**
+    *   First, carefully read the issue details provided below to understand the requirements.
+    *   Then, analyze the codebase and create a detailed, step-by-step implementation plan.
+    *   Present the plan for approval. **Do not proceed until you receive approval.**
+
+    **Issue Details:**
+    `!{gh issue view {{args}}}`
+
+2.  **Implement:**
+    *   Once the plan is approved, apply the necessary code changes to the relevant files.
+
+3.  **Verify:**
+    *   After implementing the changes, run the project's unit tests to ensure nothing has broken.
+    *   Start the application to confirm it runs without errors.
+
+4.  **Visual Confirmation with Playwright:**
+    *   Use the Playwright mcp tool to navigate to the relevant pages of the application.
+    *   Capture screenshots of the UI to verify that the changes match the requirements from the issue description.
+    *   Save these screenshots to an `output` directory.
+
+Your first action is to analyze the issue and present your plan.
+"""
