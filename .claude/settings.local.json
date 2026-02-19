@@ -15,5 +15,8 @@
     ],
     "deny": [],
     "ask": []
+  },
+  "enabledPlugins": {
+    "code-review@claude-plugins-official": true
   }
 }
